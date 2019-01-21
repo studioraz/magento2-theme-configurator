@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2018 Studio Raz. All rights reserved.
+  ~ See LICENSE.txt for license details.
+  -->
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="other_settings">
+        <fieldset name="sr_theme_configurator">
+            <settings>
+                <level>1</level>
+                <collapsible>true</collapsible>
+                <label translate="true">SR Theme Configurator</label>
+            </settings>
+
+            <fieldset name="less_variables">
+                <settings>
+                    <level>2</level>
+                    <collapsible>true</collapsible>
+                    <label translate="true">Less Variables</label>
+                </settings>
+
+                <fieldset name="general">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">General</label>
+                    </settings>
+
+                    <field name="primary__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Primary Color</label>
+                            <dataScope>less_variables.general.primary__color</dataScope>
+                            <notice><![CDATA[Less: @primary__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="secondary__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Secondary Color</label>
+                            <dataScope>less_variables.general.secondary__color</dataScope>
+                            <notice><![CDATA[Less: @secondary__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="page__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Page Background Color</label>
+                            <dataScope>less_variables.general.page__background-color</dataScope>
+                            <notice><![CDATA[Less: @page__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="sidebar__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Sidebar Background Color</label>
+                            <dataScope>less_variables.general.sidebar__background-color</dataScope>
+                            <notice><![CDATA[Less: @sidebar__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="header__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Header Background Color</label>
+                            <dataScope>less_variables.general.header__background-color</dataScope>
+                            <notice><![CDATA[Less: @header__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="footer__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Footer Background Color</label>
+                            <dataScope>less_variables.general.footer__background-color</dataScope>
+                            <notice><![CDATA[Less: @footer__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="footer-links-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Footer Links Color</label>
+                            <dataScope>less_variables.general.footer-links-color</dataScope>
+                            <notice><![CDATA[Less: @footer-links-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="footer-links-color-hover" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Footer Links Color Hover</label>
+                            <dataScope>less_variables.general.footer-links-color-hover</dataScope>
+                            <notice><![CDATA[Less: @footer-links-color-hover]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: general -->
+
+                <fieldset name="button_default">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Button Default</label>
+                    </settings>
+
+                    <field name="button__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Color</label>
+                            <dataScope>less_variables.button_default.button__color</dataScope>
+                            <notice><![CDATA[Less: @button__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Background</label>
+                            <dataScope>less_variables.button_default.button__background</dataScope>
+                            <notice><![CDATA[Less: @button__background]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Hover Color</label>
+                            <dataScope>less_variables.button_default.button__hover__color</dataScope>
+                            <notice><![CDATA[Less: @button__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button__hover__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Hover Background</label>
+                            <dataScope>less_variables.button_default.button__hover__background</dataScope>
+                            <notice><![CDATA[Less: @button__hover__background]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: button_default -->
+
+                <fieldset name="button_primary">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Button Primary</label>
+                    </settings>
+
+                    <field name="button-primary__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Primary Color</label>
+                            <dataScope>less_variables.button_primary.button-primary__color</dataScope>
+                            <notice><![CDATA[Less: @button-primary__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button-primary__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Primary Background</label>
+                            <dataScope>less_variables.button_primary.button-primary__background</dataScope>
+                            <notice><![CDATA[Less: @button-primary__background]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button-primary__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Primary Hover Color</label>
+                            <dataScope>less_variables.button_primary.button-primary__hover__color</dataScope>
+                            <notice><![CDATA[Less: @button-primary__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="button-primary__hover__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Button Primary Hover Background</label>
+                            <dataScope>less_variables.button_primary.button-primary__hover__background</dataScope>
+                            <notice><![CDATA[Less: @button-primary__hover__background]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: button_primary -->
+
+                <fieldset name="forms">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Forms</label>
+                    </settings>
+
+                    <field name="form-element-input__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Form Element Input Background</label>
+                            <dataScope>less_variables.forms.form-element-input__background</dataScope>
+                            <notice><![CDATA[Less: @form-element-input__background]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="form-element-input__border-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Form Element Input Border Color</label>
+                            <dataScope>less_variables.forms.form-element-input__border-color</dataScope>
+                            <notice><![CDATA[Less: @form-element-input__border-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="form-element-input__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Form Element Input Color</label>
+                            <dataScope>less_variables.forms.form-element-input__color</dataScope>
+                            <notice><![CDATA[Less: @form-element-input__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="form-element-input-placeholder__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Form Element input Placeholder Color</label>
+                            <dataScope>less_variables.forms.form-element-input-placeholder__color</dataScope>
+                            <notice><![CDATA[Less: @form-element-input-placeholder__color]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: forms -->
+
+                <fieldset name="typography">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Typography</label>
+                    </settings>
+
+                    <field name="border-color__base" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Border Color Base</label>
+                            <dataScope>less_variables.typography.border-color__base</dataScope>
+                            <notice><![CDATA[Less: @border-color__base]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="link__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Link Color</label>
+                            <dataScope>less_variables.typography.link__color</dataScope>
+                            <notice><![CDATA[Less: @link__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="product-name-link__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Product Name Link Color</label>
+                            <dataScope>less_variables.typography.product-name-link__color</dataScope>
+                            <notice><![CDATA[Less: @product-name-link__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="product-name-link__color__hover" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Product Name Link Color Hover</label>
+                            <dataScope>less_variables.typography.product-name-link__color__hover</dataScope>
+                            <notice><![CDATA[Less: @product-name-link__color__hover]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="product-info-price" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Product Info Price</label>
+                            <dataScope>less_variables.typography.product-info-price</dataScope>
+                            <notice><![CDATA[Less: @product-info-price]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: typography -->
+
+                <fieldset name="breadcrumbs">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Breadcrumbs</label>
+                    </settings>
+
+                    <field name="breadcrumbs-current__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Breadcrumbs Current Color</label>
+                            <dataScope>less_variables.breadcrumbs.breadcrumbs-current__color</dataScope>
+                            <notice><![CDATA[Less: @breadcrumbs-current__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="breadcrumbs-link__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Breadcrumbs Link Color</label>
+                            <dataScope>less_variables.breadcrumbs.breadcrumbs-link__color</dataScope>
+                            <notice><![CDATA[Less: @breadcrumbs-link__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="breadcrumbs-link__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Breadcrumbs Link Hover Color</label>
+                            <dataScope>less_variables.breadcrumbs.breadcrumbs-link__hover__color</dataScope>
+                            <notice><![CDATA[Less: @breadcrumbs-link__hover__color]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: breadcrumbs -->
+
+                <fieldset name="pager">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Pager</label>
+                    </settings>
+
+                    <field name="pager-current__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Current Color</label>
+                            <dataScope>less_variables.pager.pager-current__color</dataScope>
+                            <notice><![CDATA[Less: @pager-current__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Color</label>
+                            <dataScope>less_variables.pager.pager__color</dataScope>
+                            <notice><![CDATA[Less: @pager__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Hover Color</label>
+                            <dataScope>less_variables.pager.pager__hover__color</dataScope>
+                            <notice><![CDATA[Less: @pager__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager-action__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Action Color</label>
+                            <dataScope>less_variables.pager.pager-action__color</dataScope>
+                            <notice><![CDATA[Less: @pager-action__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager-action__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Action Background</label>
+                            <dataScope>less_variables.pager.pager-action__background</dataScope>
+                            <notice><![CDATA[Less: @pager-action__background]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager-action__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Action Hover Color</label>
+                            <dataScope>less_variables.pager.pager-action__hover__color</dataScope>
+                            <notice><![CDATA[Less: @pager-action__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="pager-action__hover__background" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Pager Action Hover Background</label>
+                            <dataScope>less_variables.pager.pager-action__hover__background</dataScope>
+                            <notice><![CDATA[Less: @pager-action__hover__background]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: pager -->
+
+                <fieldset name="tabs">
+                    <settings>
+                        <level>3</level>
+                        <collapsible>true</collapsible>
+                        <label translate="true">Tabs</label>
+                    </settings>
+
+                    <field name="tab-control__border-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Tab Control Border Color</label>
+                            <dataScope>less_variables.tabs.tab-control__border-color</dataScope>
+                            <notice><![CDATA[Less: @tab-control__border-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="tab-control__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Tab Control Color</label>
+                            <dataScope>less_variables.tabs.tab-control__color</dataScope>
+                            <notice><![CDATA[Less: @tab-control__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="tab-control__hover__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Tab Control Hover Background Color</label>
+                            <dataScope>less_variables.tabs.tab-control__hover__background-color</dataScope>
+                            <notice><![CDATA[Less: @tab-control__hover__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="tab-control__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Tab Control Hover Color</label>
+                            <dataScope>less_variables.tabs.tab-control__hover__color</dataScope>
+                            <notice><![CDATA[Less: @tab-control__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="tab-content__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Tab Content Background Color</label>
+                            <dataScope>less_variables.tabs.tab-content__background-color</dataScope>
+                            <notice><![CDATA[Less: @tab-content__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="accordion-control__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Accordion Control Background Color</label>
+                            <dataScope>less_variables.tabs.accordion-control__background-color</dataScope>
+                            <notice><![CDATA[Less: @accordion-control__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="accordion-control__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Accordion Control Color</label>
+                            <dataScope>less_variables.tabs.accordion-control__color</dataScope>
+                            <notice><![CDATA[Less: @accordion-control__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="accordion-control__hover__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Accordion Control Hover Background Color</label>
+                            <dataScope>less_variables.tabs.accordion-control__hover__background-color</dataScope>
+                            <notice><![CDATA[Less: @accordion-control__hover__background-color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="accordion-control__hover__color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Accordion Control Hover Color</label>
+                            <dataScope>less_variables.tabs.accordion-control__hover__color</dataScope>
+                            <notice><![CDATA[Less: @accordion-control__hover__color]]></notice>
+                        </settings>
+                    </field>
+
+                    <field name="accordion-content__background-color" formElement="input" component="SR_ThemeConfigurator/js/ui-component/colorpicker">
+                        <settings>
+                            <label translate="true">Accordion Content Background Color</label>
+                            <dataScope>less_variables.tabs.accordion-content__background-color</dataScope>
+                            <notice><![CDATA[Less: @accordion-content__background-color]]></notice>
+                        </settings>
+                    </field>
+                </fieldset><!-- end: tabs  -->
+
+            </fieldset><!-- end: less_variables -->
+            
+        </fieldset><!-- end: sr_theme_configurator -->
+    </fieldset><!-- end: other_settings -->
+</form>

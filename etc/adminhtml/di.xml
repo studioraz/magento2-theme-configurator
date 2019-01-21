@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2018 Studio Raz. All rights reserved.
+  ~ See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Theme\Model\Design\Config\DataProvider">
+        <plugin name="srthemeconfigurator_theme_designconfig_dataproviderplugin" type="SR\ThemeConfigurator\Plugin\Theme\DesignConfig\DataProviderPlugin" sortOrder="10" disabled="false"/>
+    </type>
+</config>

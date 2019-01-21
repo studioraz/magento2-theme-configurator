@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2018 Studio Raz. All rights reserved.
+  ~ See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="srthemeconfig_lessvariables_config_data_save_after">
+        <observer name="srthemeconfig_generate_theme_custom_file_aftersave" instance="SR\ThemeConfigurator\Observer\ThemeDesignConfig\GenerateLessFileObserver" disabled="false"/>
+    </event>
+
+    <event name="srthemeconfig_lessvariables_config_data_delete_after">
+        <observer name="srthemeconfig_generate_theme_custom_file_afterdelete" instance="SR\ThemeConfigurator\Observer\ThemeDesignConfig\GenerateLessFileObserver" disabled="false"/>
+    </event>
+</config>
