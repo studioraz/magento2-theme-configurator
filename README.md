@@ -78,6 +78,7 @@ then the record of that Child scope will be deleted as redundant from _core_conf
 #### 100. Requirements (are needed to correct work):
 
 100.1. Create Custom Theme and register it in the Project;
+
 100.2. Create **_theme.less** file in the Custom Theme
 **Example:** app/design/frontend/CustomTheme/base/web/css/source/_theme.less
 
