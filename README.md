@@ -61,7 +61,7 @@ then the record of that Child scope will be deleted as redundant from _core_conf
 
 #### 10. Behind the scene:
 
-10.1. **_theme_srthemeconfig.less** file within content of variables is generated when Form is saved;
+10.1. **_theme_srthemeconfig.less** file with its content of variables is generated when Form is saved;
 
 10.2. **_theme.less** file content is updated after the content has been generated; (content is: *@import '_theme_srthemeconfig.less';*);
 
